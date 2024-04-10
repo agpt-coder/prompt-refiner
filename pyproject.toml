@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "prompt-refiner"
+version = "0.1.0"
+description = "To create a single API endpoint for refining LLM prompts using the OpenAI GPT4 API, follow these steps using our selected tech stack. First, ensure you have Python installed, as it's our primary programming language. With Python, use FastAPI to handle HTTP requests due to its simplicity and performance benefits for building APIs. FastAPI integrates seamlessly with Pydantic for request validation, making it a robust choice for our endpoint."
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+bcrypt = "^3.2.0"
+fastapi = "^0.85.0"
+httpx = "^0.23.0"
+openai = "^0.10.2"
+prisma = "*"
+pydantic = "*"
+python-jose = {version = "^3.3.0", extras = ["cryptography"]}
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
